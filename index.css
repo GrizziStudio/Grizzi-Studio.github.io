@@ -382,80 +382,124 @@ body {
   }
 
   .BotonMenu {
-    font-size: 1em;
-    padding: 15px 20px;
+    font-size: 0.9em;
+    padding: 10px 12px;
   }
 
   .Inicio {
     align-items: center; 
-    padding: 0%;
+    padding: 0;
+    height: auto;
   }
   
-  .Vidio{
-    margin-left: 0%;
+  .Vidio {
+    margin-left: 0;
+    height: 100vh; 
+    object-fit: cover;
   }
 
-  .enfrente{
-    font-size: 2em;
-    padding-top: 35%;
+  .enfrente {
+    font-size: 1.5em;
+    padding-top: 25%;
   }
 
-  .BotonMasInfo{
-    margin-top: 20%;
+  .BotonMasInfo {
+    margin-top: 10%;
+    font-size: 1rem;
+    padding: 10px 30px;
   }
 
-  .PanelInfo{
-    margin-top: 20%;
+  .PanelInfo {
+    margin-top: 10%;
+    width: 95%;
+    height: auto; 
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info1, .info2 {
+    font-size: 0.8em;
+    flex: 1;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PClogo {
+    width: 50px;
+    height: auto;
+    margin: 0 auto 10px auto;
+  }
+
+  .fondoparticulas {
+    height: auto; 
+    padding: 20px 10px;
+  }
+
+  .infodestacado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+  }
+
+  .infodestacado h2 {
+    font-size: 1.5em;
+  }
+
+  .infodestacado p {
+    font-size: 1em;
+    margin-top: 5%;
+  }
+
+  .infodestacado button {
+    margin-top: 10%;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-left: 0;
+  }
+
+  .logos7r {
     width: 100%;
-    height: 20%;
+    height: auto;
+    max-width: 300px;
+    margin: 20px auto 0 auto;
   }
 
-  .información {
-    width: 70vw;
-    margin: 20px 0;
-    display: block; 
+  .Juegos {
+    margin-top: 20px;
+    flex-direction: column;
+    padding: 20px 10px;
   }
 
-  .fondoparticulas{
-    height: 70vh;
+  .Games {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
 
-  .infodestacado{
-    height: 90%;
-    margin-top: 6%;
+  .vidiojuego {
+    margin-top: 0;
+    height: auto;
+    max-height: 200px;
   }
 
-  .infodestacado p{
-    margin-top: 10%;
+  .titulojuego {
+    margin-top: 10px;
   }
 
-   .infodestacado button{
-    margin-top: 10%;
-    margin-left: 17%;
-   }
-
-  .logos7r{
-    width: 0px;
-    height: 0px;
+  .Games p {
+    font-size: 1em;
   }
 
-.Juegos{
-  margin-top: -15%;
+  .botonjuego {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
 }
 
-.Games {
-  width: 80%;     
-  height: 60vh;
-  min-height: auto; 
-  margin-top: 3%;
-}
 
-.vidiojuego{
-  margin-top: -55%;
-}
-
-.titulojuego{
-  margin-top: -50%;
-}
-
-}
