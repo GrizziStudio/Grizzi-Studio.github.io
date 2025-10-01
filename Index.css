@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+    background: rgb(27, 27, 27);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;       
+  top: 0;                 
+  left: 0;
+  width: 100%;  
+  height: auto;          
+  z-index: 1000;  
+ box-shadow: 6px 2px 25px rgb(172, 172, 172);
+}
+
+
+.logo img {
+  height: 80px;
+}
+
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.BotonMenu {
+    height: 100%;
+    padding: 30px 30px;
+    background-color: rgb(3, 3, 3);
+    border: 2.5px solid rgb(16, 16, 16);
+    color: whitesmoke;
+    font-size: 1.4em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.6s, font-size 0.6s;
+}
+.BotonMenu:hover {
+    background-color: rgb(46, 46, 46);
+    transform: scale(1.03);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+     background-color: rgb(46, 46, 46);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #888;
+}
+
+
+.información {
+    margin-bottom: 40x;
+    margin-top: 100px;
+    margin-left: 10px;
+    background: rgba(11, 11, 11, 0.7);
+    width: 26vw;
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.información .txt1 {
+    margin: 10px 0;
+    color: #e2f1f8;
+    max-width: 100%;
+    height: auto;
+}
+
+.información img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.información {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Vidio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;      
+    height: 100%;     
+    object-fit: cover;
+    z-index: -1;
+}
+
+.enfrente{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 10px 5px black;
+  font-size: 3em;
+  padding-top: 12%;
+}
+
+.BotonMasInfo{
+  padding: 12px 55px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  background: #24409b;
+  color: #fff;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s, background 0.3s, box-shadows 0.3s;
+  box-shadow: 0 2px 12px rgba(0, 57, 163, 1);
+  letter-spacing: 3px;
+  margin-top: 5%;
+}
+
+.BotonMasInfo:hover{
+  transform: scale(1.1);
+  background: #182a66;
+  box-shadow: 0 6px 15px rgb(0, 35, 100);
+}
+
+.PanelInfo{
+  width: 65%;
+  height: 30%;
+  background: rgba(65, 65, 65, 0.4);
+  margin-top: 10%;
+  border-radius: 15px;
+  backdrop-filter: blur(20px); 
+  -webkit-backdrop-filter: blur(20px); 
+  display: flex;
+  justify-content: space-around;
+}
+
+.info1{
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+  margin-left: -5%;
+}
+
+.PClogo{
+  width: 70%;
+  height: 70%;
+  margin-right: 15%;
+  margin-top: 7%;
+  
+}
+
+.info2{
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.Inicio {
+    position: relative;
+    width: 101%;    
+    height: 97vh;     
+    overflow: hidden;
+    padding: 0;        
+    margin: 0;
+}
+
+.fondoparticulas {
+  position: relative;
+  width: 101%;
+  height: 50vh;
+  background: #0c0c0c; 
+  overflow: hidden;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.particulas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.icon {
+  position: absolute;
+  opacity: 0.6;
+  animation: mover 10s linear infinite;
+}
+
+.iconp{
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes mover {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(40vw, -20vh) rotate(90deg);
+  }
+  50% {
+    transform: translate(-30vw, 30vh) rotate(180deg);
+  }
+  75% {
+    transform: translate(20vw, -40vh) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+.particulas .icon:nth-child(1) { top: 10%; left: 20%; animation-duration: 12s; }
+.particulas .icon:nth-child(2) { top: 40%; left: 60%; animation-duration: 14s; }
+.particulas .icon:nth-child(3) { top: 70%; left: 30%; animation-duration: 11s; }
+.particulas .icon:nth-child(4) { top: 20%; left: 80%; animation-duration: 16s; }
+.particulas .icon:nth-child(5) { top: 50%; left: 10%; animation-duration: 18s; }
+.particulas .icon:nth-child(6) { top: 80%; left: 70%; animation-duration: 13s; }
+.particulas .icon:nth-child(7) { top: 30%; left: 50%; animation-duration: 15s; }
+
+
+.infodestacado{
+  width: 85%;
+  height: 80%;
+  background-color: rgba(75, 75, 75, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 2.5%;
+  margin-left: 6%;
+  border-radius: 20px;
+  padding: 35px 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+}
+
+.infodestacado h2{
+  font-size: 2.2em;
+}
+
+.infodestacado p{
+  font-size: 1.5em;
+  margin-top: 3%;
+}
+
+.infodestacado button{
+  margin-top: 5%;
+  padding: 15px 25px;
+  font-size: 1.25em;
+  background-color: #00a33f;
+  color: white;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+
+  transition: background-color 0.5s, transform 0.5s, box-shadows 0.5s
+}
+
+.infodestacado button:hover{
+  background-color: #005320;
+  transform: scale(1.1);
+  box-shadow: 5px 1px 15px 5px #003615;
+}
+
+.logos7r{
+  width: 300px;
+  height: 300px;
+  margin-left: 70%;
+  border-radius: 15px;
+}
+
+
+.Juegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 40px 60px 40px;
+}
+
+.Games {
+    background: rgba(11, 11, 11, 0.7);
+    width: 26vw;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 70vh;
+    margin-top: -3%;
+}
+
+.Games:hover {
+    transform: scale(1.03);
+}
+
+.Games p{
+  margin-top: 5%;
+  letter-spacing: 1.2px;
+  font-size: 1.2em;
+}
+
+.botonjuego{
+  padding: 15px 65px;
+  font-size: 1.2em;
+  margin-top: 10%;
+  cursor: pointer;
+  border-radius: 5%;
+  border: none;
+  background: #24409b;
+  color: white;
+  letter-spacing: 1.5px;
+  box-shadow: 0 2px 12px rgba(0, 57, 163, 1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s, background 0.3s, box-shadows 0.3s;
+}
+
+.botonjuego:hover{
+  transform: scale(1.1);
+  background: #182a66;
+  box-shadow: 0 6px 15px rgb(0, 35, 100);
+}
+
+.vidiojuego{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: -35%;
+}
+
+.titulojuego{
+  margin-top: -35%;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap; 
+    flex-direction: row;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .BotonMenu {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+
+  .Inicio {
+    align-items: center; 
+    padding: 0%;
+  }
+  
+  .Vidio{
+    margin-left: 0%;
+  }
+
+  .enfrente{
+    font-size: 2em;
+    padding-top: 35%;
+  }
+
+  .BotonMasInfo{
+    margin-top: 20%;
+  }
+
+  .PanelInfo{
+    margin-top: 20%;
+    width: 100%;
+    height: 20%;
+  }
+
+  .información {
+    width: 70vw;
+    margin: 20px 0;
+    display: block; 
+  }
+
+  .fondoparticulas{
+    height: 70vh;
+  }
+
+  .infodestacado{
+    height: 90%;
+    margin-top: 6%;
+  }
+
+  .infodestacado p{
+    margin-top: 10%;
+  }
+
+   .infodestacado button{
+    margin-top: 10%;
+    margin-left: 17%;
+   }
+
+  .logos7r{
+    width: 0px;
+    height: 0px;
+  }
+
+.Juegos{
+  margin-top: -15%;
+}
+
+.Games {
+  width: 80%;     
+  height: 60vh;
+  min-height: auto; 
+  margin-top: 3%;
+}
+
+.vidiojuego{
+  margin-top: -55%;
+}
+
+.titulojuego{
+  margin-top: -50%;
+}
+
+}

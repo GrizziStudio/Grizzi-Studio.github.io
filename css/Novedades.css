@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(27, 27, 27);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;       
+  top: 0;                 
+  left: 0;
+  width: 100%;            
+  z-index: 1000;         
+}
+
+.logo img {
+  height: 90px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.BotonMenu {
+  height: 100%;
+  padding: 30px 30px;
+  background-color: rgb(3, 3, 3);
+  border: 2.5px solid rgb(16, 16, 16);
+  color: whitesmoke;
+  font-size: 1.4em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.6s, font-size 0.6s;
+}
+
+.BotonMenu:hover {
+  background-color: rgb(46, 46, 46);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: rgb(46, 46, 46);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #888;
+}
+
+.Novedades,
+.Anuncios {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.tarjeta {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  color: rgb(236, 228, 228);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarjeta:hover {
+  transform: scale(1.02);
+}
+
+.imagen-tarjeta {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contenido-tarjeta {
+  flex: 1;
+}
+
+.contenedor-carrusel {
+  background: rgba(11, 11, 11, 0.7);
+  width: clamp(280px, 90%, 1000px);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+  margin: 26vh auto 15vh auto; 
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15vh;
+}
+
+.contenido-carrusel {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titulo-carrusel {
+  color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.NovedadJG {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  flex: 1 1 65%;
+  padding-bottom: 10px;
+}
+
+.elemento {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: clamp(250px, 35vw, 400px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.elemento:hover {
+  transform: scale(1.02);
+}
+
+.elemento img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 1;
+}
+
+.demo-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 0 200px;
+  gap: 15px;
+}
+
+.demo-lateral h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.logo-juego {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+.boton-demo {
+  background-color: #00ff88;
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.boton-demo:hover {
+  background-color: #00cc66;
+}
+
+.NovedadJG::-webkit-scrollbar {
+  height: 8px;
+}
+
+.NovedadJG::-webkit-scrollbar-thumb {
+  background: #00ccff;
+  border-radius: 4px;
+}
+
+.FondoCll {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.FondoCll > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.Novedades {
+  position: relative;
+  z-index: 1;
+  padding: 140px 20px 40px 20px;
+  color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap; 
+    flex-direction: row;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .BotonMenu {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+
+  .tarjeta {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagen-tarjeta {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .contenido-tarjeta {
+    padding: 10px 20px;
+  }
+
+  .contenido-carrusel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .demo-lateral {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .logo-juego {
+    max-width: 60%;
+  }
+
+  .boton-demo {
+    width: 100%;
+  }
+
+  .elemento {
+    width: 90%;
+  }
+
+  .contenedor-carrusel {
+    margin-top: 10px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .titulo-carrusel {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .FondoCll > img {
+    left: 20px;
+  }
+}
