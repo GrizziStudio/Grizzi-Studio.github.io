@@ -269,7 +269,7 @@ body {
 }
 
 .infodestacado p{
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-top: 3%;
 }
 
@@ -295,7 +295,7 @@ body {
 .logos7r{
   width: 200px;
   height: 200px;
-  margin-left: 70%;
+  margin-left: 55%;
   border-radius: 15px;
 }
 
@@ -458,6 +458,7 @@ body {
   margin-top: -60%;
 }
 }
+
 
 
 
