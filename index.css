@@ -388,85 +388,55 @@ body {
 
   .Inicio {
     align-items: center; 
-    padding: 0;
-    height: auto;
+    padding: 0%;
   }
   
-  .Vidio {
-    margin-left: 0;
-    height: 100vh; 
-    object-fit: cover;
+  .Vidio{
+    margin-left: 0%;
   }
 
-  .enfrente {
-    font-size: 1.5em;
-    padding-top: 25%;
+  .enfrente{
+    font-size: 2em;
+    padding-top: 35%;
   }
 
-  .BotonMasInfo {
-    margin-top: 10%;
-    font-size: 1rem;
-    padding: 10px 30px;
+  .BotonMasInfo{
+    margin-top: 20%;
   }
 
-  .PanelInfo {
-    margin-top: 10%;
-    width: 95%;
-    height: auto; 
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .info1, .info2 {
-    font-size: 0.8em;
-    flex: 1;
-    margin: 10px 0;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .PClogo {
-    width: 50px;
-    height: auto;
-    margin: 0 auto 10px auto;
-  }
-
-  .fondoparticulas {
-    height: auto; 
-    padding: 20px 10px;
-  }
-
-  .infodestacado {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 95%;
-    margin: 20px auto;
-    height: auto;
-    padding: 20px;
-  }
-
-  .infodestacado h2 {
-    font-size: 1.5em;
-  }
-
-  .infodestacado p {
-    font-size: 1em;
-    margin-top: 5%;
-  }
-
-  .infodestacado button {
-    margin-top: 10%;
-    font-size: 1em;
-    padding: 10px 20px;
-    margin-left: 0;
-  }
-
-  .logos7r {
+  .PanelInfo{
+    margin-top: 20%;
     width: 100%;
-    height: auto;
-    max-width: 300px;
-    margin: 20px auto 0 auto;
+    height: 20%;
+  }
+
+  .información {
+    width: 70vw;
+    margin: 20px 0;
+    display: block; 
+  }
+
+  .fondoparticulas{
+    height: 70vh;
+  }
+
+  .infodestacado{
+    height: 90%;
+    margin-top: 6%;
+  }
+
+  .infodestacado p{
+    margin-top: 10%;
+  }
+
+   .infodestacado button{
+    margin-top: 10%;
+    margin-left: 17%;
+   }
+
+  .logos7r{
+    width: 0px;
+    height: 0px;
   }
 
   .Juegos {
@@ -501,5 +471,6 @@ body {
     margin-top: 15px;
   }
 }
+
 
 
