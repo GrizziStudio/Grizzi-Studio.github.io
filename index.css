@@ -382,8 +382,8 @@ body {
   }
 
   .BotonMenu {
-    font-size: 0.9em;
-    padding: 10px 12px;
+    font-size: 1em;
+    padding: 15px 20px;
   }
 
   .Inicio {
@@ -439,38 +439,26 @@ body {
     height: 0px;
   }
 
-  .Juegos {
-    margin-top: 20px;
-    flex-direction: column;
-    padding: 20px 10px;
-  }
-
-  .Games {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .vidiojuego {
-    margin-top: 0;
-    height: auto;
-    max-height: 200px;
-  }
-
-  .titulojuego {
-    margin-top: 10px;
-  }
-
-  .Games p {
-    font-size: 1em;
-  }
-
-  .botonjuego {
-    font-size: 1em;
-    padding: 10px 20px;
-    margin-top: 15px;
-  }
+.Juegos{
+  margin-top: -15%;
 }
+
+.Games {
+  width: 80%;     
+  height: 65vh;
+  min-height: auto; 
+  margin-top: 3%;
+}
+
+.vidiojuego{
+  margin-top: -60%;
+}
+
+.titulojuego{
+  margin-top: -60%;
+}
+}
+
 
 
 
