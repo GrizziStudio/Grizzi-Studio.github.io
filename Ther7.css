@@ -7,89 +7,66 @@
 body {
     font-family: sans-serif;
     background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     overflow-x: hidden;
     color: white;
-    padding-top: 100px; 
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px; 
-    z-index: 1000;
-    box-shadow: 6px 2px 25px rgb(172, 172, 172);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;       
+  top: 0;                 
+  left: 0;
+  width: 100%;            
+  z-index: 1000;         
 }
 
-.logo img {
-    height: 80px;
+.logNav img {
+  height: 90px;
 }
 
 .menu {
-    display: flex; 
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: #888;
 }
 
 .BotonMenu {
-    height: auto; 
-    padding: 10px 20px; 
+    height: 100%;
+    padding: 30px 30px;
     background-color: rgb(3, 3, 3);
     border: 2.5px solid rgb(16, 16, 16);
     color: whitesmoke;
-    font-size: 1.2em; 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 2px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.6s, font-size 0.6s;
-    display: inline-block; 
 }
-
 .BotonMenu:hover {
     background-color: rgb(46, 46, 46);
-    transform: scale(1.03);
+    transform: scale(1.05);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: rgb(46, 46, 46);
+    transform: scale(1.1);
     box-shadow: 0 0 10px #888;
-}
-
-.menuMb {
-    display: none; 
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 1002; 
-    font-size: 30px;
-    color: white;
-    font-weight: 300;
-    position: fixed; 
-    top: 30px;
-    right: 20px;
-}
-
-.menuMb .bar {
-    display: block;
-    width: 30px;
-    height: 3px;
-    margin: 6px auto;
-    background-color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-.logo-mobile {
-    display: none; 
-    position: absolute;
-    top: 15px;
-    left: 20px;
-}
-.logo-mobile img {
-    height: 60px;
 }
 
 .juego {
@@ -136,25 +113,24 @@ body {
     margin: 8px 0;
 }
 .botoncomprar {
-    background-color: #0f1a3e;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1.2px solid black;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-left: 14.5%;
-    font-size: 1.16em;
-    box-shadow: 4px 4px 2px rgb(58, 27, 2);
-
-    transition: background-color 0.5s, box-shadow 0.5s, transform 0.5s;
+      padding: 12px 55px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  background: #24409b;
+  color: #fff;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s, background 0.3s, box-shadows 0.3s;
+  box-shadow: 0 2px 12px rgba(0, 57, 163, 1);
+  letter-spacing: 3px;
+  margin-top: 5%;
 }
 
 .botoncomprar:hover{
-
-    background-color: #050915;
-    box-shadow: 2px 2px 2px rgb(58, 27, 2);
-    transform: scale(1.15);
-
+  transform: scale(1.1);
+  background: #182a66;
+  box-shadow: 0 6px 15px rgb(0, 35, 100);
 }
 
 .capturas {
@@ -165,10 +141,9 @@ body {
 }
 .captura {
     width: 100%;
-    height: auto; 
+    height: auto;
     border-radius: 10px;
 }
-
 .requisitosjuego {
     margin-top: 20px;
     background: rgba(11, 11, 11, 0.7);
@@ -194,102 +169,98 @@ body {
     margin: 25px 0;
 }
 
-@media (max-width: 900px) {
-    
-    .menuMb {
-        display: block;
-    }
-
-    .menu {
-        position: fixed;
-        top: 0; 
-        right: -100%; 
-        width: 100%;
-        height: 100vh;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.98); 
-        transition: right 0.3s ease-in-out;
-        gap: 30px; 
-        padding-top: 100px;
-    }
-
-    .menu.active {
-        right: 0; 
-    }
-    
-    .menu.active .logo-mobile {
-        display: block; 
-    }
-    
-    .navbar.menu-open .logo {
-        visibility: hidden;
-    }
-    
-    .menuMb.active .bar {
-        display: none; 
-    }
-    .menuMb.active::after {
-        content: '×'; 
-    }
-
-    .BotonMenu {
-        width: 90%; 
-        max-width: 400px;
-        text-align: center;
-        padding: 20px 0; 
-        margin: 0;
-        border: none;
-        border-bottom: 1px solid rgb(30, 30, 30);
-        background-color: black; 
-        font-size: 1.5em; 
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    
-    @media (max-width: 600px) {
-        .juego {
-            flex-direction: column;
-            padding: 30px 20px;
-            align-items: center;
-        }
-
-        .a, .b {
-            width: 100%;
-            padding: 0;
-        }
-
-        .logo {
-            width: 90vw;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        .titulojuego {
-            width: 90vw;
-            text-align: center;
-            font-size: 1.5em;
-        }
-
-        .detallesjuego {
-            width: 90vw;
-            margin: 20px 0;
-        }
-
-        .botoncomprar {
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            margin-bottom: 35px;
-        }
-
-        .capturas {
-            grid-template-columns: 1fr;
-        }
-
-        .requisitosjuego {
-            width: 90vw;
-            height: auto;
-        }
-    }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
 }
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap; 
+    flex-direction: row;
+  }
+
+ .menu {
+    display: none; 
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 15px 0;
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logNav img {
+    height: 50px;
+  }
+
+  .BotonMenu {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
+  
+  .juego {
+    flex-direction: column;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .a, .b {
+    width: 100%;
+    padding: 0;
+  }
+
+  .logo {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .titulojuego {
+    width: 90vw;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .detallesjuego {
+    width: 90vw;
+    margin: 20px 0;
+  }
+
+  .botoncomprar {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .capturas {
+    grid-template-columns: 1fr;
+  }
+
+  .requisitosjuego {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+
