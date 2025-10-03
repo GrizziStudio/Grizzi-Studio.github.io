@@ -145,12 +145,14 @@ body {
   padding: 80px 40px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px black;
+  
 }
 
 .o h2 {
   color: #e2f1f8;
   font-size: clamp(2rem, 5vw, 5em);
   margin-bottom: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .o p {
@@ -201,6 +203,7 @@ body {
     margin-top: 0;
     margin-bottom: 10px;
     text-align: center; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .o p, .mon p {
@@ -240,6 +243,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .integrante {
@@ -250,6 +254,7 @@ body {
     text-align: center;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .integrante:hover {
@@ -270,6 +275,7 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     margin: 10px 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .rol {
@@ -404,4 +410,5 @@ body {
   }
 
 }
+
 
