@@ -67,6 +67,12 @@ body {
     box-shadow: 0 0 10px #888;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+}
 
 .información {
     margin-bottom: 40x;
@@ -269,7 +275,7 @@ body {
 }
 
 .infodestacado p{
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-top: 3%;
 }
 
@@ -293,9 +299,9 @@ body {
 }
 
 .logos7r{
-  width: 200px;
-  height: 200px;
-  margin-left: 65%;
+  width: 300px;
+  height: 300px;
+  margin-left: 70%;
   border-radius: 15px;
 }
 
@@ -371,19 +377,37 @@ body {
   }
 
   .menu {
-    flex-direction: row;
-    justify-content: flex-end;
-    flex: 1;
-    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: -250px;         
+    width: 200px;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(11, 11, 11, 0.8);
+    padding: 60px 20px;
+    z-index: 999;
   }
 
-  .logo img {
-    height: 50px;
+  .menu.show {
+    left: 0;               
   }
 
   .BotonMenu {
-    font-size: 1em;
-    padding: 15px 20px;
+    font-size: 1.2em;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    height: auto;
+  }
+
+  .hamburger {
+    display: block;         
+  }
+}
+
+  .logo img {
+    height: 50px;
   }
 
   .Inicio {
@@ -434,7 +458,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 0%;
+    margin-top: 5%;
     margin-left: 4.5%;
 }
 
@@ -461,7 +485,7 @@ body {
     height: 150px;
     margin: 10px auto 0 auto;   
   }
-}
+
 
 .Juegos {
     display: flex;
@@ -498,13 +522,3 @@ body {
     margin-top: 10px;       
     font-size: 1.2em;       
   }
-
-
-
-
-
-
-
-
-
-
