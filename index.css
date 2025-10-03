@@ -412,6 +412,7 @@ body {
 
   .BotonMasInfo{
     margin-top: 20%;
+    font-size: 0.8em;
   }
 
   .PanelInfo {
@@ -439,7 +440,7 @@ body {
   }
 
   .fondoparticulas{
-    height: 70vh;
+    height: 78vh;
   }
 
   .infodestacado{
@@ -488,3 +489,4 @@ body {
     margin-top: 10px;
   }
 }
+
