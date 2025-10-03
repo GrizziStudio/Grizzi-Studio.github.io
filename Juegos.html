@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/Juegos.css">
+    <link rel="stylesheet" href="Juegos.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/XZm4NYDq/logogrizzi.png">
     <title>Juegos Grizzi Studio</title>
 </head>
 <body>
      <header class="navbar">
     <div class="logo">
-      <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
+      <img src="https://i.ibb.co/XZm4NYDq/logogrizzi.png" alt="Grizzi Studio Logo">
     </div>
 
     <button class="menuMb" aria-label="Abrir menú">
@@ -18,11 +19,17 @@
         <span class="bar"></span>
     </button>
 
+<div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
     <nav class="menu">
-      <a href="/Grizzi Studio/html/Inicio.html" class="BotonMenu">Inicio</a>
-      <a href="/Grizzi Studio/html/Juegos.html" class="BotonMenu">Juegos</a> 
-      <a href="/Grizzi Studio/html/Nosotros.html" class="BotonMenu">Nosotros</a>
-      <a href="/Grizzi Studio/html/Novedades.html" class="BotonMenu">Novedades</a>
+      <a href="index.html" class="BotonMenu">Inicio</a>
+      <a href="Juegos.html" class="BotonMenu">Juegos</a> 
+      <a href="Nosotros.html" class="BotonMenu">Nosotros</a>
+      <a href="Novedades.html" class="BotonMenu">Novedades</a>
     </nav>
 </header>
 
@@ -31,7 +38,7 @@
             
             <div class="Games">
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
-                <source src="/Grizzi Studio/video/SPACE SHOOT VIDEO.mp4" type="video/mp4">
+                <source src="SpaceShoots.mp4" type="video/mp4">
               </video>
 
               <div class="titulojuego">
@@ -46,14 +53,14 @@
                 algunos fáciles otros difíciles.
               </p>
 
-             <button class="botonjuego" onclick="window.location.href='/Grizzi Studio/html/SpaceShoots.html'">
+             <button class="botonjuego" onclick="window.location.href='SpaceShoots.html'">
                Ver Juego
               </button>
             </div>
           
             <div class="Games">
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
-                <source src="/Grizzi Studio/video/TSR1.mp4" type="video/mp4">
+                <source src="TSR1.mp4" type="video/mp4">
               </video>
 
               <div class="titulojuego">
@@ -68,14 +75,14 @@
                 descubre el secreto de los rituales y encuentra a tu amigo.
               </p>
 
-               < <button class="botonjuego" onclick="window.location.href='/Grizzi Studio/html/TheSevenRituals.html'">
+               < <button class="botonjuego" onclick="window.location.href='TheSevenRituals.html'">
                Ver Juego
               </button>
             </div>
 
             <div class="Games">
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
-                <source src="/Grizzi Studio/video/PupusaClicker.mp4" type="video/mp4">
+                <source src="PupusaClicker.mp4" type="video/mp4">
               </video>
 
               <div class="titulojuego">
@@ -90,7 +97,7 @@
                 la pupusa.
               </p>
 
-            <button class="botonjuego" onclick="window.location.href='/Grizzi Studio/html/PupusaClicker.html'">
+            <button class="botonjuego" onclick="window.location.href='PupusaClicker.html'">
                Ver Juego
               </button>
             </div>
@@ -99,22 +106,6 @@
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
                 <source src="" type="video/mp4">
               </video>
-
-              <div class="titulojuego">
-                <h1>
-                  titulo
-                </h1>
-              </div>
-
-              <p>
-                infoaqui
-              </p>
-
-              <button class="botonjuego">
-                <b>Ver Juego</b>
-              </button>
-
-            </div>
           </section>
 </body>
 <script>
@@ -133,5 +124,13 @@
         navMenu.classList.remove('active');
         navBar.classList.remove('menu-open');
     }));
+
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
 </script>
+
 </html>
