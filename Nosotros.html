@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/Nosotros.css">
-    <title>Sobre Grizzi</title>
+    <link rel="stylesheet" href="Nosotros.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/XZm4NYDq/logogrizzi.png">
+    <title>Sobre Grizzi Studio</title>
 </head>
 <body>
     
     <main>
           <header class="navbar">
     <div class="logo">
-      <img src="/img/logogrizzi.png" alt="Grizzi Studio Logo">
+      <img src="https://i.ibb.co/XZm4NYDq/logogrizzi.png" alt="Grizzi Studio Logo">
     </div>
+    
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
     <nav class="menu">
-      <a href="/HTML/Inicio.html" class="BotonMenu">Inicio</a>
-      <a href="/HTML/nosotros.html" class="BotonMenu">Nosotros</a>
-      <a href="/html/Novedades.html" class="BotonMenu">Novedades</a>
+      <a href="index.html" class="BotonMenu">Inicio</a>
+      <a href="#" class="BotonMenu">Juegos</a>
+      <a href="Nosotros.html" class="BotonMenu">Nosotros</a>
+      <a href="Novedades.html" class="BotonMenu">Novedades</a>
     </nav>
   </header>
 
@@ -25,7 +34,7 @@
         <section class="InicioNs">
 
             <article class="Q">
-                <img src="/img/logogrizzi.png" alt="Grizzi Studio Logo">
+                <img src="https://i.ibb.co/XZm4NYDq/logogrizzi.png" alt="Grizzi Studio Logo">
                 <p>Creemos firmemente que los videojuegos no solo entretienen, sino que también brindan una vía de escape positiva
                     , ayudando a reducir el estrés, mejorar el estado de ánimo y estimular la imaginación.
                     Por eso, cada uno de nuestros juegos está diseñado o seleccionado con el fin de brindar una experiencia envolvente, segura y gratificante para todo tipo de jugador. </p>
@@ -40,7 +49,7 @@
 
             <article>
                 <video width="1024" height="768" autoplay muted loop class="Vidio">
-                    <source src="/video/VideoNosotrosSS.mp4" type="video/mp4">
+                    <source src="PAGINAWEB.mp4" type="video/mp4">
                 </video>
             </article>
 
@@ -48,22 +57,20 @@
         </section>
 
 <section class="obj">
-    <!-- Tarjeta de OBJETIVO -->
     <div class="o">
         <h2>OBJETIVO</h2>
         <p>
             Desarrollar videojuegos innovadores y de alta calidad para diversas plataformas, como PlayStation 5, Xbox Series X/S, Nintendo Switch, ordenadores, dispositivos móviles y futuras consolas, con el objetivo de priorizar la innovación en la jugabilidad y las mecánicas.
         </p>
-        <img src="/IMG/dianna.png" alt="">
+        <img src="https://i.ibb.co/kVd737Gw/dianna.png" alt="">
     </div>
 
-    <!-- Tarjeta de MISIÓN -->
     <div class="mon">
         <h2>MISIÓN</h2>
         <p>
             Liderar la próxima generación de experiencias interactivas en este caso los videojuegos con gráficos de última generación, inmersivos y emocionantes que cautiven a los jugadores de todo el mundo.
         </p>
-        <img src="/IMG/mision.png" alt="">
+        <img src="https://i.ibb.co/SDx3sMYv/mision.png" alt="">
     </div>
 </section>
     <section class="eq">
@@ -72,15 +79,15 @@
         <div class="integrantes">
 
             <div class="integrante">
-                <div class="avatar" style="background-image: url('/IMG/fernando.png');"></div>
+                <div class="avatar" style="background-image: url('');"></div>
                 <p class="nombre">Fernando Melendez</p>
                 <p class="rol lider">LÍDER</p>
             </div>
 
             <div class="integrante">
-                <div class="avatar" style="background-image: url('/IMG/carlos.png');"></div>
+                <div class="avatar" style="background-image: url('');"></div>
                 <p class="nombre">Carlos López</p>
-                <p class="rol sublider">SUBLÍDER</p>
+                <p class="rol programador">PROGRAMADOR</p>
             </div>
 
             <div class="integrante">
@@ -97,19 +104,13 @@
 
             <div class="integrante">
                 <div class="avatar" style="background-image: url('');"></div>
-                <p class="nombre">Cesár Sanchez</p>
-                <p class="rol programador">PROGRAMADOR</p>
-            </div>
-
-            <div class="integrante">
-                <div class="avatar" style="background-image: url('');"></div>
                 <p class="nombre">Douglas Mcliberty</p>
                 <p class="rol programador">PROGRAMADOR</p>
             </div>
 
             <div class="integrante">
                 <div class="avatar" style="background-image: url('');"></div>
-                <p class="nombre">Estafany</p>
+                <p class="nombre">Estefany Martinez</p>
                 <p class="rol programador">PROGRAMADOR</p>
             </div>
 
@@ -118,6 +119,15 @@
 </section>
 
 
-    </main>
+</main>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
