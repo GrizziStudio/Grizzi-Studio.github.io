@@ -396,12 +396,13 @@ body {
   }
 
   .enfrente{
-    font-size: 2em;
-    padding-top: 35%;
+    font-size: 1.6em;
+    padding-top: 60%;
   }
 
   .BotonMasInfo{
     margin-top: 20%;
+    font-size: 0.5em;
   }
 
   .PanelInfo{
@@ -416,48 +417,88 @@ body {
     display: block; 
   }
 
-  .fondoparticulas{
+  .fondoparticulas {
     height: 70vh;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    position: relative;     
+}
+
+
+ .infodestacado {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;           
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 22%;
+    margin-left: 4.5%;
+}
+
+
+  .infodestacado h2 {
+    font-size: 1.8em;          
   }
 
-  .infodestacado{
-    height: 90%;
-    margin-top: 6%;
+  .infodestacado p {
+    margin-top: 5%;            
+    font-size: 1em;             
+    word-wrap: break-word;     
   }
 
-  .infodestacado p{
-    margin-top: 10%;
+  .infodestacado button {
+    margin: 5% auto 0 auto;     
+    display: block;             
+    font-size: 1em;              
+    padding: 10px 20px;         
   }
 
-   .infodestacado button{
-    margin-top: 10%;
-    margin-left: 17%;
-   }
+  .logos7r {
+    width: 150px;                
+    height: 150px;
+    margin: 10px auto 0 auto;   
+  }
+}
 
-  .logos7r{
-    width: 0px;
-    height: 0px;
+.Juegos {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin-top: -8%;        
+    gap: 20px;             
   }
 
-.Juegos{
-  margin-top: -15%;
-}
+  .Games {
+    width: 90%;            
+    height: auto;         
+    min-height: auto;
+    margin-top: 5%;          
+    padding: 15px;         
+    box-sizing: border-box;
+    text-align: center;    
+  }
 
-.Games {
-  width: 80%;     
-  height: 65vh;
-  min-height: auto; 
-  margin-top: 3%;
-}
+  .Games p {
+    word-wrap: break-word;  
+    font-size: 1em;         
+    margin-top: 10px;
+  }
 
-.vidiojuego{
-  margin-top: -60%;
-}
+  .vidiojuego {
+    width: 100%;            
+    height: auto;           
+    margin-top: 10px;       
+    border-radius: 15px;   
+  }
 
-.titulojuego{
-  margin-top: -60%;
-}
-}
+  .titulojuego {
+    margin-top: 10px;       
+    font-size: 1.2em;       
+  }
+
 
 
 
