@@ -3,68 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pupusa Clicker</title>
-    <link rel="stylesheet" href="/css/PupusaClicker.css">
+    <title>Pupusa Clicker Mobile</title>
+    <link rel="stylesheet" href="PupusaClicker.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/XZm4NYDq/logogrizzi.png">
 
 </head>
 <body>
 
  <main>
-        
-    <header class="navbar">
-        <div class="logo">
-          <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
-        </div>
+            <header class="navbar">
+                <div class="logNav">
+               <img src=https://i.ibb.co/XZm4NYDq/logogrizzi.png" alt="Grizzi Studio Logo">
+                </div>
 
-        <button class="menuMb" aria-label="Abrir menú">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <nav class="menu">
-            <div class="logo-mobile">
-              <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
-            </div>
-            <a href="/Grizzi Studio/html/Inicio.html" class="BotonMenu">Inicio</a>
-            <a href="/Grizzi Studio/html/Juegos.html" class="BotonMenu">Juegos</a> 
-            <a href="/Grizzi Studio/html/Nosotros.html" class="BotonMenu">Nosotros</a>
-            <a href="/Grizzi Studio/html/Novedades.html" class="BotonMenu">Novedades</a>
-        </nav>
-    </header>
+                  <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+                <nav class="menu">
+                <a href="index.html" class="BotonMenu">Inicio</a>
+                <a href="Juegos.html" class="BotonMenu">Juegos</a>
+                <a href="Nosotros.html" class="BotonMenu">Nosotros</a>
+                <a href="Novedades.html" class="BotonMenu">Novedades</a>
+                </nav>
+            </header>
         
         <div class="juego">
             <div class="a">
                 
-                <img src="/Grizzi Studio/IMG/pupusalogo.jpg" class="logo">
+                <img src="https://i.ibb.co/Ng7fKw5m/pupusalogo.jpg" class="logo">
                 <h1 class="titulojuego">Pupusa Clicker</h1>
                 <div class="detallesjuego">
-                    <p><strong>Género:</strong> Arcade</p>
+                    <p><strong>Género:</strong>Casual</p>
                     <p><strong>Jugadores:</strong> 1</p>
                     <p><strong>Textos:</strong> Español</p>
                     <p><strong>Voces:</strong> no disponible</p>
                     <p><strong>Plataforma:</strong> Android</p>
-                    <p><Strong>Desarrollador:</Strong> Grizzi Studio,TYPYGAMES</p>
+                    <p><Strong>Desarrollador:</Strong>Wisero Studios</p>
+                    <p><Strong>Distribuidor:</Strong>Grizzi Studio</p>
                     <br></br>
-                    <p>Space Shoots es un juego de un jugador que cuenta</p>
-                    <p>con gráficos increíbles, mecánicas fáciles</p> 
-                    <p>y cuenta con varios niveles con una dificultad diferente,</p> 
-                    <p>algunos fáciles otros difíciles.</p>
+                    <p>empieza desde cero, progresa hasta volverte el mejor pupusero de tu colonia!.</p>
                 </div>
-                <button class="botoncomprar">Descargar Gratis</button>
+
+                <a href="https://play.google.com/store/apps/details?id=com.DefaultCompany.PupusaClicker">
+                    <button class="botoncomprar">Google Play</button>
+                </a>
+                
+                
             </div>
             <div class="b">
                 <div class="capturas">
-                    <img src="/Grizzi Studio/IMG/pupusa11.png" class="captura">
-                    <img src="/Grizzi Studio/IMG/pupusa2.webp" class="captura">
-                    <img src="/Grizzi Studio/IMG/Pupusa3.webp" class="captura">
-                    
+                    <img src="https://i.ibb.co/yFpMwy9h/pupusa2.webp" class="captura">
+                    <img src="https://i.ibb.co/HpFN2p25/Pupusa3.webp" class="captura">
+                    <img src="https://i.ibb.co/yFpMwy9h/pupusa2.webp" class="captura">
+                    <img src="https://i.ibb.co/HpFN2p25/Pupusa3.webp" class="captura">
                 </div>
                 <div class="requisitosjuego">
                     <h2>Requisitos</h2>
-                    <p>Versión de Android: Android 8.0</p>
-                    <p>Memoria: 2 GB RAM</p>
-                    <p>Almacenamiento: 700 MB de espacio disponible</p>
+                    <p>Versión de Android: Android 6.0</p>
+                    <p>Memoria: 1 GB RAM</p>
+                    <p>Almacenamiento: 100 MB de espacio disponible</p>
                     <p>CPU: T606</p>
                     <p>GPU: Mali-G57</p>
                     <p>OpenGL: 3.2</p>
@@ -75,23 +75,15 @@
 
 
     </main>
-
-</body>
 <script>
-    const menuMb = document.querySelector('.menuMb'); 
-    const navMenu = document.querySelector('.menu');
-    const navBar = document.querySelector('.navbar'); 
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
 
-    menuMb.addEventListener('click', () => {
-        menuMb.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        navBar.classList.toggle('menu-open'); 
-    });
-
-    document.querySelectorAll('.BotonMenu').forEach(n => n.addEventListener('click', () => {
-        menuMb.classList.remove('active');
-        navMenu.classList.remove('active');
-        navBar.classList.remove('menu-open');
-    }));
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
 </script>
+</body>
+
 </html>
+
