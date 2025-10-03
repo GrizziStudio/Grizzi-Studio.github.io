@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grizzi Studio.com</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/png" href="https://i.ibb.co/XZm4NYDq/logogrizzi.png">
+  <link rel="stylesheet" href="Index.css">
+  <link rel="icon" type="image/png" href="/img/logogrizzi.png">
 </head>
 <body>
   <header class="navbar">
     <div class="logo">
-      <img src="https://i.ibb.co/XZm4NYDq/logogrizzi.png" alt="Grizzi Studio Logo">
+      <img src="/img/logogrizzi.png" alt="Grizzi Studio Logo">
     </div>
+
+
+    <div class="hamburger" onclick="toggleMenu()">
+    &#9776; 
+    </div>
+
     <nav class="menu">
-      <a href="index.html" class="BotonMenu">Inicio</a>
-      <a href="../HTML/nosotros.html" class="BotonMenu">Nosotros</a>
-      <a href="../html/Novedades.html" class="BotonMenu">Novedades</a>
+      <a href="/HTML/Inicio.html" class="BotonMenu">Inicio</a>
+      <a href="/HTML/Inicio.html" class="BotonMenu">Juegos</a>
+      <a href="/HTML/nosotros.html" class="BotonMenu">Nosotros</a>
+      <a href="/html/Novedades.html" class="BotonMenu">Novedades</a>
     </nav>
   </header>
 
@@ -23,7 +30,7 @@
 
             <article>
                 <video width="auto" height="auto" autoplay muted loop class="Vidio">
-                    <source src="PAGINAWEB.mp4" type="video/mp4">
+                    <source src="/video/PAGINAWEB.mp4" type="video/mp4">
                 </video>
                 <div class="enfrente">
                  <h1>¡Bienvenido a Grizzi Studio!</h1>
@@ -32,7 +39,7 @@
 
                       
                       <article class="info1">
-                         <img src="https://i.ibb.co/ccNvGZLD/pc.png" class="PClogo" alt="pc logo">
+                         <img src="/img/pc.png" class="PClogo" alt="pc logo">
 
                         <br>
                         Juegos
@@ -44,7 +51,7 @@
 
                       <article class="info2">
 
-                        <img src="https://i.ibb.co/ZRkrVMCz/phone.png" class="PClogo" alt="android logo">
+                        <img src="/img/phone.png" class="PClogo" alt="android logo">
 
                         <br>
                         Juegos
@@ -62,15 +69,14 @@
 
       <section class="fondoparticulas">
         <div class="particulas">
-            <span class="icon cuadrado"><img src="https://i.ibb.co/prj5Bf6W/cuadrado.png"  class="iconp"></span>
-            <span class="icon circulo"><img src="https://i.ibb.co/N6HvgFRF/Circulo.png"  class="iconp"></span>
-            <span class="icon triangulo"><img src="https://i.ibb.co/B5GzRZPw/triangulo.png" class="iconp"></span>
-            <span class="icon equis"><img src="https://i.ibb.co/fVRKTBjn/Equis.png" class="iconp"></span>
-            <span class="icon cuadrado"><img src="https://i.ibb.co/prj5Bf6W/cuadrado.png" class="iconp"></span>
-            <span class="icon circulo"><img src="https://i.ibb.co/N6HvgFRF/Circulo.png" class="iconp"></span>
-            <span class="icon triangulo"><img src="https://i.ibb.co/B5GzRZPw/triangulo.png" class="iconp"></span>
-            <span class="icon equis"><img src="https://i.ibb.co/fVRKTBjn/Equis.png" class="iconp"></span>
-          
+            <span class="icon cuadrado"><img src="/img/cuadrado.png"  class="iconp"></span>
+            <span class="icon circulo"><img src="/img/Circulo.png"  class="iconp"></span>
+            <span class="icon triangulo"><img src="/img/triangulo.png" class="iconp"></span>
+            <span class="icon equis"><img src="/img/Equis.png" class="iconp"></span>
+            <span class="icon cuadrado"><img src="/img/cuadrado.png" class="iconp"></span>
+            <span class="icon circulo"><img src="/img/Circulo.png" class="iconp"></span>
+            <span class="icon triangulo"><img src="/img/triangulo.png" class="iconp"></span>
+            <span class="icon equis"><img src="/img/Equis.png" class="iconp"></span>
         </div>
 
         <div class="infodestacado">
@@ -89,7 +95,7 @@
           </div>
 
           <div>
-            <img src="https://i.ibb.co/Pv92Dxy0/the7r.jpg" class="logos7r"/>
+            <img src="/img/the7r.jpeg" class="logos7r"/>
           </div>
             
         </div>
@@ -99,7 +105,7 @@
             
             <div class="Games">
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
-                <source src="SpaceShoots.mp4" type="video/mp4">
+                <source src="/video/SpaceShoots.mp4" type="video/mp4">
               </video>
 
               <div class="titulojuego">
@@ -122,7 +128,7 @@
           
             <div class="Games">
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
-                <source src="TSR1.mp4" type="video/mp4">
+                <source src="/video/TSR1.mp4" type="video/mp4">
               </video>
 
               <div class="titulojuego">
@@ -145,7 +151,7 @@
 
             <div class="Games">
               <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
-                <source src="PupusaClicker.mp4" type="video/mp4">
+                <source src="/video/PupusaClicker.mp4" type="video/mp4">
               </video>
 
               <div class="titulojuego">
@@ -167,8 +173,12 @@
             </div>
           </section>
 </body>
+
+<script>
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('show');
+}
+</script>
+
 </html>
-
-
-
-
