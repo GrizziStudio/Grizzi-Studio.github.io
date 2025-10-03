@@ -113,25 +113,24 @@ body {
     margin: 8px 0;
 }
 .botoncomprar {
-    background-color: #0f1a3e;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1.2px solid black;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-left: 14.5%;
-    font-size: 1.16em;
-    box-shadow: 4px 4px 2px rgb(58, 27, 2);
-
-    transition: background-color 0.5s, box-shadow 0.5s, transform 0.5s;
+      padding: 12px 55px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  background: #24409b;
+  color: #fff;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s, background 0.3s, box-shadows 0.3s;
+  box-shadow: 0 2px 12px rgba(0, 57, 163, 1);
+  letter-spacing: 3px;
+  margin-top: 5%;
 }
 
 .botoncomprar:hover{
-
-    background-color: #050915;
-    box-shadow: 2px 2px 2px rgb(58, 27, 2);
-    transform: scale(1.15);
-
+  transform: scale(1.1);
+  background: #182a66;
+  box-shadow: 0 6px 15px rgb(0, 35, 100);
 }
 
 .capturas {
@@ -263,5 +262,6 @@ body {
     height: auto;
   }
 }
+
 
 
