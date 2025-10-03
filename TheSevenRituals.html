@@ -3,68 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Seven Rituals Chapter: 1</title>
-    <link rel="stylesheet" href="/Grizzi Studio/css/SpaceShoots.css">
+    <title>Space Shoots Mobile</title>
+    <link rel="stylesheet" href="Ther7.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/XZm4NYDq/logogrizzi.png">
+
 </head>
 <body>
 
  <main>
             <header class="navbar">
-        <div class="logo">
-          <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
-        </div>
+                <div class="logNav">
+               <img src=https://i.ibb.co/XZm4NYDq/logogrizzi.png" alt="Grizzi Studio Logo">
+                </div>
 
-        <button class="menuMb" aria-label="Abrir menú">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <nav class="menu">
-            <div class="logo-mobile">
-              <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
-            </div>
-            <a href="/Grizzi Studio/html/Inicio.html" class="BotonMenu">Inicio</a>
-            <a href="/Grizzi Studio/html/Juegos.html" class="BotonMenu">Juegos</a> 
-            <a href="/Grizzi Studio/html/Nosotros.html" class="BotonMenu">Nosotros</a>
-            <a href="/Grizzi Studio/html/Novedades.html" class="BotonMenu">Novedades</a>
-        </nav>
-    </header>
+                  <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                
+                <nav class="menu">
+                <a href="index.html" class="BotonMenu">Inicio</a>
+                <a href="Juegos.html" class="BotonMenu">Juegos</a>
+                <a href="Nosotros.html" class="BotonMenu">Nosotros</a>
+                <a href="Novedades.html" class="BotonMenu">Novedades</a>
+                </nav>
+            </header>
+        
         <div class="juego">
             <div class="a">
                 
-                <img src="/Grizzi Studio/IMG/the7r.jpeg" class="logo">
-                <h1 class="titulojuego">The Seven Rituals Chapter: 1</h1>
+                <img src="https://i.ibb.co/sdkmcMWB/Space-Shoots-Logo.png" class="logo">
+                <h1 class="titulojuego">The Seven Rituals - Chapter 1</h1>
                 <div class="detallesjuego">
-                    <p><strong>Género:</strong> Arcade</p>
+                    <p><strong>Género:</strong> Survival Horror</p>
                     <p><strong>Jugadores:</strong> 1</p>
-                    <p><strong>Textos:</strong> Español, Ingles, Portugues</p>
+                    <p><strong>Textos:</strong> Español, Ingles, Portugues, Frances, Aleman, Japones, Ruso, Italiano</p>
                     <p><strong>Voces:</strong> no disponible</p>
-                    <p><strong>Plataforma:</strong> Android</p>
+                    <p><strong>Plataforma:</strong>Windows</p>
                     <p><Strong>Desarrollador:</Strong> Grizzi Studio</p>
                     <br></br>
-                    <p>Space Shoots es un juego de un jugador que cuenta</p>
-                    <p>con gráficos increíbles, mecánicas fáciles</p> 
-                    <p>y cuenta con varios niveles con una dificultad diferente,</p> 
-                    <p>algunos fáciles otros difíciles.</p>
+                    <p>Investiga una casa abandonada en lo profundo de un bosque solitario,</p>
+                    <p>donde extraños rituales, criaturas y sangre revelan un oscuro secreto.</p> 
+                    <p>¿Podrás descubrir al responsable de las desapariciones… o serás la próxima víctima?.</p> 
+                     
                 </div>
-                <button class="botoncomprar">Comprar Juego</button>
+            <a href="https://store.steampowered.com/"></a>
+                <button class="botoncomprar">COMPRAR</button>
+            </a>
             </div>
             <div class="b">
                 <div class="capturas">
-                    <img src="/Grizzi Studio/IMG/captura2Th7.jpeg" class="captura">
-                    <img src="/Grizzi Studio/IMG/5.jpeg" class="captura">
-                    <img src="/Grizzi Studio/IMG/4.jpeg" class="captura">
-                    <img src="/Grizzi Studio/IMG/3.jpeg" class="captura">
+                    <img src="captura1th7.jpeg" class="captura">
+                    <img src="captura2Th7.jpeg" class="captura">
+                    <img src="3.jpeg" class="captura">
+                    <img src="5.jpeg" class="captura">
                 </div>
                 <div class="requisitosjuego">
                     <h2>Requisitos</h2>
-                    <p>Versión de Android: Android 8.0</p>
-                    <p>Memoria: 2 GB RAM</p>
-                    <p>Almacenamiento: 700 MB de espacio disponible</p>
-                    <p>CPU: T606</p>
-                    <p>GPU: Mali-G57</p>
-                    <p>OpenGL: 3.2</p>
+                    <p>Sistema Operativo: Windows 10/11</p>
+                    <p>Memoria Ram: 8 GB RAM</p>
+                    <p>Almacenamiento: 10GB de almacenamiento</p>
+                    <p>Procesador: Intel Core I3 9100</p>
+                    <p>Tarjeta Grafica: Nvidia Geforce GTX 1660 6GB Vram</p>
+                    <p>Directx: versión 12</p>
                     
                 </div>
             </div>
@@ -72,23 +74,14 @@
 
 
     </main>
-
-</body>
 <script>
-    const menuMb = document.querySelector('.menuMb'); 
-    const navMenu = document.querySelector('.menu');
-    const navBar = document.querySelector('.navbar'); 
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
 
-    menuMb.addEventListener('click', () => {
-        menuMb.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        navBar.classList.toggle('menu-open'); 
-    });
-
-    document.querySelectorAll('.BotonMenu').forEach(n => n.addEventListener('click', () => {
-        menuMb.classList.remove('active');
-        navMenu.classList.remove('active');
-        navBar.classList.remove('menu-open');
-    }));
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
 </script>
+</body>
+
 </html>
