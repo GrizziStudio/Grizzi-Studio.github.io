@@ -134,7 +134,7 @@ body {
   transition: transform 0.3s, background 0.3s, box-shadows 0.3s;
   box-shadow: 0 2px 12px rgba(0, 57, 163, 1);
   letter-spacing: 3px;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .BotonMasInfo:hover{
@@ -253,7 +253,7 @@ body {
 }
 
 .infodestacado p{
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-top: 3%;
 }
 
@@ -311,13 +311,13 @@ body {
 .Games p{
   margin-top: 5%;
   letter-spacing: 1.2px;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .botonjuego{
   padding: 15px 65px;
   font-size: 1.2em;
-  margin-top: 10%;
+  margin-top: 8%;
   cursor: pointer;
   border-radius: 5%;
   border: none;
@@ -489,6 +489,7 @@ body {
     margin-top: 10px;
   }
 }
+
 
 
 
