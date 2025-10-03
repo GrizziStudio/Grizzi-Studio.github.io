@@ -170,17 +170,44 @@ body {
     margin: 25px 0;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
 @media (max-width: 600px) {
   .navbar {
     flex-wrap: nowrap; 
     flex-direction: row;
   }
 
-  .menu {
-    flex-direction: row;
-    justify-content: flex-end;
-    flex: 1;
-    gap: 10px;
+ .menu {
+    display: none; 
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 15px 0;
+    z-index: 999;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .logNav img {
@@ -236,3 +263,4 @@ body {
     height: auto;
   }
 }
+
