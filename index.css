@@ -397,7 +397,7 @@ body {
 
   .enfrente{
     font-size: 1.6em;
-    padding-top: 60%;
+    padding-top: 50%;
   }
 
   .BotonMasInfo{
@@ -434,7 +434,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 22%;
+    margin-top: 5%;
     margin-left: 4.5%;
 }
 
@@ -498,6 +498,7 @@ body {
     margin-top: 10px;       
     font-size: 1.2em;       
   }
+
 
 
 
