@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Seven Rituals Chapter: 1</title>
+    <link rel="stylesheet" href="/Grizzi Studio/css/SpaceShoots.css">
+</head>
+<body>
+
+ <main>
+            <header class="navbar">
+        <div class="logo">
+          <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
+        </div>
+
+        <button class="menuMb" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="menu">
+            <div class="logo-mobile">
+              <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
+            </div>
+            <a href="/Grizzi Studio/html/Inicio.html" class="BotonMenu">Inicio</a>
+            <a href="/Grizzi Studio/html/Juegos.html" class="BotonMenu">Juegos</a> 
+            <a href="/Grizzi Studio/html/Nosotros.html" class="BotonMenu">Nosotros</a>
+            <a href="/Grizzi Studio/html/Novedades.html" class="BotonMenu">Novedades</a>
+        </nav>
+    </header>
+        <div class="juego">
+            <div class="a">
+                
+                <img src="/Grizzi Studio/IMG/the7r.jpeg" class="logo">
+                <h1 class="titulojuego">The Seven Rituals Chapter: 1</h1>
+                <div class="detallesjuego">
+                    <p><strong>Género:</strong> Arcade</p>
+                    <p><strong>Jugadores:</strong> 1</p>
+                    <p><strong>Textos:</strong> Español, Ingles, Portugues</p>
+                    <p><strong>Voces:</strong> no disponible</p>
+                    <p><strong>Plataforma:</strong> Android</p>
+                    <p><Strong>Desarrollador:</Strong> Grizzi Studio</p>
+                    <br></br>
+                    <p>Space Shoots es un juego de un jugador que cuenta</p>
+                    <p>con gráficos increíbles, mecánicas fáciles</p> 
+                    <p>y cuenta con varios niveles con una dificultad diferente,</p> 
+                    <p>algunos fáciles otros difíciles.</p>
+                </div>
+                <button class="botoncomprar">Comprar Juego</button>
+            </div>
+            <div class="b">
+                <div class="capturas">
+                    <img src="/Grizzi Studio/IMG/captura2Th7.jpeg" class="captura">
+                    <img src="/Grizzi Studio/IMG/5.jpeg" class="captura">
+                    <img src="/Grizzi Studio/IMG/4.jpeg" class="captura">
+                    <img src="/Grizzi Studio/IMG/3.jpeg" class="captura">
+                </div>
+                <div class="requisitosjuego">
+                    <h2>Requisitos</h2>
+                    <p>Versión de Android: Android 8.0</p>
+                    <p>Memoria: 2 GB RAM</p>
+                    <p>Almacenamiento: 700 MB de espacio disponible</p>
+                    <p>CPU: T606</p>
+                    <p>GPU: Mali-G57</p>
+                    <p>OpenGL: 3.2</p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+<script>
+    const menuMb = document.querySelector('.menuMb'); 
+    const navMenu = document.querySelector('.menu');
+    const navBar = document.querySelector('.navbar'); 
+
+    menuMb.addEventListener('click', () => {
+        menuMb.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        navBar.classList.toggle('menu-open'); 
+    });
+
+    document.querySelectorAll('.BotonMenu').forEach(n => n.addEventListener('click', () => {
+        menuMb.classList.remove('active');
+        navMenu.classList.remove('active');
+        navBar.classList.remove('menu-open');
+    }));
+</script>
+</html>
