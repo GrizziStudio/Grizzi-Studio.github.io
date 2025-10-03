@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Juegos.css">
+    <title>Juegos Grizzi Studio</title>
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">
+      <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
+    </div>
+
+    <button class="menuMb" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="menu">
+      <a href="/Grizzi Studio/html/Inicio.html" class="BotonMenu">Inicio</a>
+      <a href="/Grizzi Studio/html/Juegos.html" class="BotonMenu">Juegos</a> 
+      <a href="/Grizzi Studio/html/Nosotros.html" class="BotonMenu">Nosotros</a>
+      <a href="/Grizzi Studio/html/Novedades.html" class="BotonMenu">Novedades</a>
+    </nav>
+</header>
+
+
+    <section class="Juegos">
+            
+            <div class="Games">
+              <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
+                <source src="/Grizzi Studio/video/SPACE SHOOT VIDEO.mp4" type="video/mp4">
+              </video>
+
+              <div class="titulojuego">
+                <h1>
+                  Space Shoots
+                </h1>
+              </div>
+
+              <p>
+                Space Shoots es un juego de un jugador que cuenta con gráficos increíbles, 
+                mecánicas fáciles y cuenta con varios niveles con una dificultad diferente, 
+                algunos fáciles otros difíciles.
+              </p>
+
+             <button class="botonjuego" onclick="window.location.href='/Grizzi Studio/html/SpaceShoots.html'">
+               Ver Juego
+              </button>
+            </div>
+          
+            <div class="Games">
+              <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
+                <source src="/Grizzi Studio/video/TSR1.mp4" type="video/mp4">
+              </video>
+
+              <div class="titulojuego">
+                <h1>
+                  The Seven Rituals Chapter 1
+                </h1>
+              </div>
+
+              <p>
+                Investiga las desapariciones en un casa abandonada que se encuentra en
+                un bosque solitario, mientras te topas con extrañas criaturas,
+                descubre el secreto de los rituales y encuentra a tu amigo.
+              </p>
+
+               < <button class="botonjuego" onclick="window.location.href='/Grizzi Studio/html/TheSevenRituals.html'">
+               Ver Juego
+              </button>
+            </div>
+
+            <div class="Games">
+              <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
+                <source src="/Grizzi Studio/video/PupusaClicker.mp4" type="video/mp4">
+              </video>
+
+              <div class="titulojuego">
+                <h1>
+                  Pupusa Clicker
+                </h1>
+              </div>
+
+              <p>
+                Pupusa Clicker es un juego sencillo, clickea la pupusa y obten
+                dinero para comprar mejoras y conseguir mas dinero al clickear
+                la pupusa.
+              </p>
+
+            <button class="botonjuego" onclick="window.location.href='/Grizzi Studio/html/PupusaClicker.html'">
+               Ver Juego
+              </button>
+            </div>
+
+              <div class="Games">
+              <video width="auto" height="auto" autoplay muted loop class="vidiojuego">
+                <source src="" type="video/mp4">
+              </video>
+
+              <div class="titulojuego">
+                <h1>
+                  titulo
+                </h1>
+              </div>
+
+              <p>
+                infoaqui
+              </p>
+
+              <button class="botonjuego">
+                <b>Ver Juego</b>
+              </button>
+
+            </div>
+          </section>
+</body>
+<script>
+    const menuMb = document.querySelector('.menuMb'); 
+    const navMenu = document.querySelector('.menu');
+    const navBar = document.querySelector('.navbar'); 
+
+    menuMb.addEventListener('click', () => {
+        menuMb.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        navBar.classList.toggle('menu-open'); 
+    });
+
+    document.querySelectorAll('.BotonMenu').forEach(n => n.addEventListener('click', () => {
+        menuMb.classList.remove('active');
+        navMenu.classList.remove('active');
+        navBar.classList.remove('menu-open');
+    }));
+</script>
+</html>
