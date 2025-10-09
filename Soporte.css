@@ -201,6 +201,18 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
 
 @media (max-width: 900px) {
     
@@ -337,4 +349,5 @@ body {
             height: auto;
         }
     }
+
 }
