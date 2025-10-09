@@ -65,22 +65,13 @@
 </body>
 
 <script>
-    const menuMb = document.querySelector('.menuMb'); 
-    const navMenu = document.querySelector('.menu');
-    const navBar = document.querySelector('.navbar'); 
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
 
-    menuMb.addEventListener('click', () => {
-        menuMb.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        navBar.classList.toggle('menu-open'); 
-    });
-
-    document.querySelectorAll('.BotonMenu').forEach(n => n.addEventListener('click', () => {
-        menuMb.classList.remove('active');
-        navMenu.classList.remove('active');
-        navBar.classList.remove('menu-open');
-    }));
-
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
 </script>
 
 </html>
+
