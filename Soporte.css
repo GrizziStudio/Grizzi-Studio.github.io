@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+    background: rgb(27, 27, 27);
+    padding-top: 100px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; 
+    z-index: 1000;
+    box-shadow: 6px 2px 25px rgb(172, 172, 172);
+}
+
+.navbar .logo {
+    z-index: 1003; 
+}
+
+.navbar .logo img { 
+    height: 80px;
+}
+
+.logo-mobile {
+    display: none; 
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1001; 
+}
+
+.logo-mobile img {
+    height: 60px;
+}
+
+.menu {
+    display: flex; 
+    gap: 20px;
+}
+
+.BotonMenu {
+    height: auto; 
+    padding: 10px 20px; 
+    background-color: rgb(3, 3, 3);
+    border: 2.5px solid rgb(16, 16, 16);
+    color: whitesmoke;
+    font-size: 1.2em; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.6s, font-size 0.6s;
+    display: inline-block; 
+}
+
+.BotonMenu:hover {
+    background-color: rgb(46, 46, 46);
+    transform: scale(1.03);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px #888;
+}
+
+.menuMb {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002; 
+    font-size: 30px;
+    color: white;
+    font-weight: 300;
+    position: fixed; 
+    top: 30px;
+    right: 20px;
+}
+
+.menuMb .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.contenido-soporte {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenido-soporte h1 {
+    text-align: center;
+    color: #ffffff; 
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    border-bottom: 2px solid #7a7a7a;
+    padding-bottom: 15px;
+}
+
+.introduccion {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #ffffff; 
+}
+
+.Pregun h2 {
+    color: rgb(228, 223, 223);
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    text-align: left; 
+}
+
+.pregunta-respuesta {
+    background-color: rgb(35, 35, 35); 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 5px solid #000000; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s;
+}
+
+.pregunta-respuesta:hover {
+    transform: translateY(-2px);
+}
+
+.pregunta-respuesta h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+.pregunta-respuesta p {
+    color: #b6b3b3; 
+    line-height: 1.6;
+}
+
+
+.separador {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin: 50px 0;
+}
+
+.contacto-directo {
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto 80px auto; 
+    padding: 30px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-top: 5px solid #272727; 
+}
+
+.contacto-directo h2 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.instruccion-contacto {
+    color: #ccc;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.email-contacto p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #ddd; 
+    margin-bottom: 15px;
+}
+
+.boton-email {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #424442; 
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+@media (max-width: 900px) {
+    
+    .menuMb {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0; 
+        right: -100%; 
+        width: 100%;
+        height: 100vh;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.98); 
+        transition: right 0.3s ease-in-out;
+        gap: 30px; 
+        padding-top: 100px;
+    }
+
+    .menu.active {
+        right: 0; 
+    }
+    
+    .menu.active .logo-mobile {
+        display: none; 
+    }
+    
+    .menuMb.active .bar {
+        display: none; 
+    }
+    .menuMb.active::after {
+        content: '×'; 
+        display: block;
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body.menu-active {
+        overflow: hidden; 
+    }
+    
+    .navbar.menu-open ~ .contenido-soporte {
+        visibility: hidden;
+        pointer-events: none;
+    }
+    
+    .BotonMenu {
+        width: 90%; 
+        max-width: 400px;
+        text-align: center;
+        padding: 20px 0; 
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid rgb(30, 30, 30);
+        background-color: black; 
+        font-size: 1.5em; 
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .contacto-directo {
+        max-width: 90%; 
+        margin: 40px auto;
+        padding: 25px;
+    }
+    
+    .contacto-directo h2 {
+        font-size: 1.6em;
+    }
+    
+    .boton-email {
+        font-size: 1.3em;
+        padding: 12px 25px;
+    }
+    
+    @media (max-width: 600px) {
+        
+        .contacto-directo {
+            margin: 30px auto 50px auto;
+            padding: 20px 15px;
+        }
+        .boton-email {
+            font-size: 1.2em;
+            padding: 12px 20px;
+            word-break: break-all; 
+        }
+
+        .juego {
+            flex-direction: column;
+            padding: 30px 20px;
+            align-items: center;
+        }
+
+        .a, .b {
+            width: 100%;
+            padding: 0;
+        }
+
+        .logo {
+            width: auto; 
+            height: auto;
+            margin-bottom: 0; 
+        }
+
+        .titulojuego {
+            width: 90vw;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .detallesjuego {
+            width: 90vw;
+            margin: 20px 0;
+        }
+
+        .botoncomprar {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 35px;
+        }
+
+        .capturas {
+            grid-template-columns: 1fr;
+        }
+
+        .requisitosjuego {
+            width: 90vw;
+            height: auto;
+        }
+    }
+}

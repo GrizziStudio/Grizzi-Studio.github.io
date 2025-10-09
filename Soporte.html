@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Grizzi Studio/css/Soporte.css">
+    <title>Soporte Grizzi Studio</title>
+</head>
+<body>
+     <header class="navbar">
+    <div class="logo">
+      <img src="/Grizzi Studio/img/logogrizzi.png" alt="Grizzi Studio Logo">
+    </div>
+
+    <button class="menuMb" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="menu">
+      <a href="/Grizzi Studio/html/Inicio.html" class="BotonMenu">Inicio</a>
+      <a href="/Grizzi Studio/html/Juegos.html" class="BotonMenu">Juegos</a> 
+      <a href="/Grizzi Studio/html/Nosotros.html" class="BotonMenu">Nosotros</a>
+      <a href="/Grizzi Studio/html/Novedades.html" class="BotonMenu">Novedades</a>
+      <a href="/Grizzi Studio/html/Soporte.html" class="BotonMenu">Soporte</a>
+    </nav>
+</header>
+
+ <main class="contenido-soporte">
+        <h1>Centro de Soporte Grizzi Studio</h1>
+        <p class="introduccion">Estamos aquí para ayudarte, puedes contactarnos directamente.</p>
+
+    <section class="Pregun">
+        <h2>Preguntas Frecuentes</h2>
+          <div class="pregunta-respuesta">
+         <h3>¿Cómo puedo reportar un error?</h3>
+             <p>Para reportar un error o bug, por favor, envíanos un correo electrónico a nuestro soporte. Incluye la siguiente información: el nombre del juego, una descripción detallada del error y, si es posible, capturas de pantalla o videos del problema.</p>
+             </div>
+        <div class="pregunta-respuesta">
+             <h3>¿Dónde encuentro los requisitos del sistema?</h3>
+            <p>Los requisitos del sistema para cada juego se encuentran detallados en su respectiva página dentro de la sección "Juegos" de nuestro sitio web. Si tienes dudas específicas, contáctanos por correo.</p>
+         </div>
+        <div class="pregunta-respuesta">
+             <h3>El juego se me cierra, ¿qué hago?</h3>
+             <p>Si el juego se cierra inesperadamente, primero verifica que tus drivers de gráficos estén actualizados y que tu PC cumpla los requisitos mínimos. Si el problema continúa, envíanos un correo a soporte, indicando el juego, la hora y el momento exacto en que ocurrió el cierre.</p>
+         </div>
+    </section>
+        
+        <hr class="separador">
+
+        
+        <section class="contacto-directo">
+            <h2>¿No encontraste la solución? Contáctanos</h2>
+            <p class="instruccion-contacto">Envía un correo electrónico a nuestro equipo de soporte. Asegúrate de incluir todos los detalles necesarios (juego, error, capturas de pantalla, etc.) para una respuesta rápida.</p>
+            
+            <div class="email-contacto">
+                <p>Nuestro Correo Electrónico de Soporte:</p>
+                <a href="mailto:soporte@grizzi-studio.com?subject=Consulta%20de%20Soporte%20Grizzi%20Studio" class="boton-email">soporte@grizzi-studio.com</a> 
+            </div>
+            
+        </section>
+
+</body>
+
+<script>
+    const menuMb = document.querySelector('.menuMb'); 
+    const navMenu = document.querySelector('.menu');
+    const navBar = document.querySelector('.navbar'); 
+
+    menuMb.addEventListener('click', () => {
+        menuMb.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        navBar.classList.toggle('menu-open'); 
+    });
+
+    document.querySelectorAll('.BotonMenu').forEach(n => n.addEventListener('click', () => {
+        menuMb.classList.remove('active');
+        navMenu.classList.remove('active');
+        navBar.classList.remove('menu-open');
+    }));
+
+</script>
+</html>
